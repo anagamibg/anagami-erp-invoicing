@@ -1,0 +1,165 @@
+// ============================================================================
+// Anagami ERP Redesign — Invoice & Finance Pages (Aggressive Override)
+// ============================================================================
+
+// Invoice/finance table status indicators
+.badge-paid, .badge-complete {
+  background-color: $r-success-light !important;
+  color: $r-success !important;
+}
+
+.badge-unpaid, .badge-pending {
+  background-color: $r-warning-light !important;
+  color: darken($r-warning, 10%) !important;
+}
+
+.badge-cancelled, .badge-overdue {
+  background-color: $r-danger-light !important;
+  color: $r-danger !important;
+}
+
+.badge-draft {
+  background-color: $r-body-bg !important;
+  color: $r-text-muted !important;
+}
+
+// Invoice detail card
+.card.invoice {
+  border-radius: $r-border-radius !important;
+  overflow: hidden !important;
+
+  .card-body {
+    padding: $r-space-6 $r-space-8 !important;
+  }
+}
+
+// Invoice detail tables
+.inv-num-date, .inv-detail {
+  .bg-light-grey {
+    background-color: $r-body-bg !important;
+    border-radius: $r-border-radius-sm !important;
+  }
+
+  tr td {
+    border-color: $r-border-color !important;
+    font-size: $r-text-sm !important;
+  }
+}
+
+// Invoice detail table — cleaner borders
+.inv-detail {
+  border-collapse: collapse !important;
+
+  thead th {
+    background-color: $r-body-bg !important;
+    font-size: $r-text-xs !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+    color: $r-text-secondary !important;
+    padding: 10px 16px !important;
+    border: 1px solid $r-border-color !important;
+  }
+
+  tbody td {
+    padding: 10px 16px !important;
+    border: 1px solid $r-border-color !important;
+    font-size: $r-text-sm !important;
+  }
+}
+
+// Invoice status badge (PAID, UNPAID etc.)
+.card.invoice .badge,
+.card.invoice .btn-success,
+.card.invoice .btn-warning,
+.card.invoice .btn-danger {
+  border-radius: $r-border-radius-sm !important;
+  font-size: $r-text-xs !important;
+  font-weight: 600 !important;
+  padding: 6px 14px !important;
+  letter-spacing: 0.03em !important;
+}
+
+// Invoice action buttons
+.inv-action {
+  .btn {
+    border-radius: $r-border-radius-sm !important;
+  }
+}
+
+// Invoice note and terms sections
+.card.invoice .note-text,
+.card.invoice .terms-text {
+  font-size: $r-text-sm !important;
+  color: $r-text-secondary !important;
+}
+
+// Other Info section on invoice detail
+.card.bg-white.b-shadow-4 {
+  .card-body h4 {
+    font-size: $r-text-md !important;
+    font-weight: 600 !important;
+    color: $r-text-primary !important;
+  }
+}
+
+// Create invoice
+.c-inv-desc {
+  table {
+    border-radius: $r-border-radius !important;
+    overflow: hidden !important;
+
+    tr td {
+      border-color: $r-border-color !important;
+    }
+  }
+
+  select {
+    border: 1px solid $r-border-color !important;
+    border-radius: $r-border-radius-sm !important;
+    font-size: $r-text-sm !important;
+    padding: 6px 10px !important;
+  }
+}
+
+// Create invoice form — select dropdowns
+.create-inv, .c-inv-desc {
+  .bootstrap-select > .dropdown-toggle {
+    padding: 6px 12px !important;
+    font-size: $r-text-sm !important;
+  }
+
+  .select2-container--default .select2-selection--single {
+    height: 36px !important;
+
+    .select2-selection__rendered {
+      line-height: 36px !important;
+      font-size: $r-text-sm !important;
+    }
+  }
+}
+
+.c-inv-total .c-inv-total-right td {
+  border-color: $r-border-color !important;
+}
+
+.c-inv-btns .dropdown-toggle span {
+  border-left-color: $r-border-color !important;
+}
+
+.create-inv .bg-light-gre {
+  background-color: $r-body-bg !important;
+  border-radius: $r-border-radius !important;
+}
+
+.unpaid {
+  background-color: $r-warning-light !important;
+  border-radius: $r-border-radius-sm !important;
+}
+
+// Status dots in tables (Paid/Unpaid indicators)
+.table td .badge {
+  border-radius: $r-border-radius-pill !important;
+  padding: 4px 10px !important;
+  font-size: $r-text-xs !important;
+}
